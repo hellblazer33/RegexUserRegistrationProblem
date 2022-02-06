@@ -9,10 +9,10 @@ namespace RegexPattern
 {
     class Patterns
     {
-      public static string regex7 = "^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9!@#>$&]{8,}$";
-       public bool password3(string password3)
+      public static string regex8 = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#?$&])[a-zA-Z0-9!@#?$&]{8,}$";
+       public bool password4(string password4)
         {
-            return Regex.IsMatch(password3, regex7);
+            return Regex.IsMatch(password4, regex8);
         }
      }
 }
