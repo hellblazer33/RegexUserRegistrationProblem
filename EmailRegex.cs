@@ -9,9 +9,9 @@ namespace RegexPattern
 {
     class Patterns
     {
-      public static string regex3 = "^[A-Z][a-z]{2,}$";
-      public bool validateLastName(string lastName)
+      public static string regex = "^[A-Za-z0-9]+([.#_+][A-Za-z0-9]+)*[@][A-Za-z0-9]+[.][a-z]{2,3}([.][a-z]{2})?$";
+      public bool validateEmail(string sample)
         {
-            return Regex.IsMatch(lastName, regex3);
+            return Regex.IsMatch(sample, regex);
         }
      }
